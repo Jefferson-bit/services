@@ -1,0 +1,12 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: naming-server
+
+eureka:
+  client:
+    ##aqui dizemos para o eureka não se auto registrar pq estamos executando local, em prod é tirar essa config
+    register-with-eureka: false
+    fetch-registry: false
